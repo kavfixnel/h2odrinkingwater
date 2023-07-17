@@ -27,7 +27,7 @@ resource "github_branch" "main" {
   branch     = "main"
 }
 
-resource "github_branch_default" "default"{
+resource "github_branch_default" "default" {
   repository = github_repository.h2odrinkingwater.name
   branch     = github_branch.main.branch
 }
