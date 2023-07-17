@@ -1,0 +1,20 @@
+{
+	"name": "my-app",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "npm run build && ./hotfix-build.sh && npx gh-pages -d build --dotfiles"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
+		"@sveltejs/kit": "^1.20.4",
+		"gh-pages": "^5.0.0",
+		"svelte": "^4.0.5",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
+}
