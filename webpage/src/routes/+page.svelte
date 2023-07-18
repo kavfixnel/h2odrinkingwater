@@ -33,8 +33,10 @@
   }
 
   img.meme {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: auto;
+
+    max-width: 80vw;
   }
 
   img.github-mark {

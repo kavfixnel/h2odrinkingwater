@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+	body {
+		overflow: hidden;
+	}
+
+	/* Create a dummy htlm element for the background */
+	body::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		opacity: 0.2;
+		z-index: -99;
+
+		background-image: url("background.jpeg");
+		background-repeat: repeat;
+		background-size: 300px;
+	}
+</style>
+
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
